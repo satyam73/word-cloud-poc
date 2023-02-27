@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 let clients = [];
 let ansClients = [];
 app.get('/', (req, res) => {
-    res.status(200).send("index")
+    res.status(200).send("index");
 })
 
 // send data functions

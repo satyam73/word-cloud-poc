@@ -16,7 +16,7 @@ sseQues();
 sseAns();
 function sseQues() {
     if (!listening) {
-        const event = new EventSource("http://localhost:8080/api/question");
+        const event = new EventSource("/api/question");
 
         event.onmessage = async (event) => {
             question = JSON.parse(event.data);
