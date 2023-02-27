@@ -12,11 +12,12 @@ connectDB();
 console.log("this is the static path ", staticPath)
 
 // middlewares
-app.use(express.static(staticPath))
 app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
-
+app.use(express.static(staticPath))
+app.use('/js', express.static(path.join(__dirname, '/public/js')));
+app.use('/css', express.static(path.join(__dirname, '/public/css')));
 let clients = [];
 let ansClients = [];
 app.get('/', (req, res) => {
