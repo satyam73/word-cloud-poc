@@ -6,7 +6,7 @@ const path = require("path");
 const staticPath = path.join(__dirname, "/public");
 const connectDB = require('./db/conn');
 const cors = require('cors');
-const PORT = 8080;
+const PORT = 8080 || process.env.PORT;
 const { Question, Answer } = require('./db/models/model');
 connectDB();
 console.log("this is the static path ", staticPath)
