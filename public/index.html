@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <div id="main-container">
+        <div class="form-container">
+                <label id="questionInpLabel" for="question">Ask a Question!</label>
+                <input id="questionInp" name="question" placeholder="Ask a Question!" type="text">
+                <button id="askBtn" type="button">Ask a question</button>
+            </div>
+        <div class="wordCloud"></div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"
+        integrity="sha512-HjKxWye8lJGPu5q1u/ZYkHlJrJdm6KGr89E6tOrXeKm1mItb1xusPU8QPcKVhP8F9LjpZT7vsu1Fa+dQywP4eg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script defer type="module" src="js/wordCloud.js"></script>
+        <script defer type="module" src="js/index.js"></script>
+    
+
+</body>
+
+</html>
